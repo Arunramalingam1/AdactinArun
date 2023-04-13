@@ -17,6 +17,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(Cucumber.class)
 @CucumberOptions(tags = "", dryRun = false, features = "src/test/resources/Features", plugin = { "pretty",
 		"json:target/index.json" }, monochrome = true, stepNotifications = true, snippets = SnippetType.CAMELCASE, glue = "com.stepdefinition")
+//This is test runner class
+//This is edited by Ravi Rajaram
+
 public class Testrunnerclass extends BaseClass {
 	/**
 	 * @see used to Generate Snippets and excecute step definition

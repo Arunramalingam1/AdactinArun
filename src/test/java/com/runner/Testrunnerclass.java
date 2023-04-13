@@ -18,7 +18,14 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions(tags = "", dryRun = false, features = "src/test/resources/Features", plugin = { "pretty",
 		"json:target/index.json" }, monochrome = true, stepNotifications = true, snippets = SnippetType.CAMELCASE, glue = "com.stepdefinition")
 //This is test runner class
+/**
+ * 
+ * @author arun
+ *
+ */
+
 //This is edited by Ravi Rajaram
+
 
 public class Testrunnerclass extends BaseClass {
 	/**
@@ -26,7 +33,7 @@ public class Testrunnerclass extends BaseClass {
 	 * @throws FileNotFoundException
 	 * @throws IOException
 	 */
-// This is test runner class
+
 	@AfterClass
 	public static void afterClass() throws FileNotFoundException, IOException {
 		Reporting.generateJvmreport(getProjectPath() + getPropertyfilevalue("jsonpath"));

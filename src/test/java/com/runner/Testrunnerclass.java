@@ -23,7 +23,7 @@ public class Testrunnerclass extends BaseClass {
 	 * @throws FileNotFoundException
 	 * @throws IOException
 	 */
-
+// This is test runner class
 	@AfterClass
 	public static void afterClass() throws FileNotFoundException, IOException {
 		Reporting.generateJvmreport(getProjectPath() + getPropertyfilevalue("jsonpath"));
